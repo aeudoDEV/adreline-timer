@@ -1,0 +1,25 @@
+.Header{
+
+    height: 5rem;
+    border:1px solid red; 
+    background-color:var(--gray-800);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        display: flex;
+        gap: 0.4rem;
+        
+        button{
+            background: transparent;
+            border: 0;
+            height: 1.7rem;
+            width: 1.7rem;
+            &:hover {
+               border-bottom: 2px solid var(--green-500);
+            
+            }
+        }  
+    }
+    
+}

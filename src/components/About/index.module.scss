@@ -1,0 +1,46 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    flex-direction: column;
+    overflow: auto;
+    table{
+        max-height: 50%;
+        margin-top: 0.5rem;
+        border-collapse: collapse;
+        
+        thead{
+            
+            background-color: var(--gray-500);
+            border-radius: 10px;
+            tr{
+                th{
+                    
+                    padding: 0.5rem;
+                    font-size: 14px;
+
+                    &:first-child{
+                        border-radius: 10px 0 0 0;
+                    }
+                    &:last-child{
+                        border-radius: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+        tbody{
+            
+            tr{
+                td{
+                    background-color: var(--gray-800);
+                    color: white;
+                    text-align: center;
+                    font-size: 14px;
+                    border-top: 4px solid var(--gray-600);
+                    
+                }
+            }
+        }
+
+    }
+}
